@@ -2,25 +2,25 @@ class Bike
     # ...
   end
   
-  class RedBicycle < Bike
+  class Bicycle < Bike
   
-    AMOUNT = 10
+    MASS = 10
   
-    def initialize(a, b, c)
-      @height = a
-      @weight = b
-      @color = c
+    def initialize(height, weight, color)
+      @bicycle_height = height
+      @bicycle_weight = weight
+      @bicycle_color = color
     end
   
     def getColor
-      @color
+      @bike_color
     end
   
-    def retreive_height
-      @height
+    def getHeight
+      @bike_height
     end
   
-    def change_weight
-      @weight -= AMOUNT
+    def setWeight
+      @bike_weight -= MASS
     end
   end
